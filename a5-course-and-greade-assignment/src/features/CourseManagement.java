@@ -168,7 +168,7 @@ public class CourseManagement {
             Student student = students.get(i);
             System.out.println((i + 1) + ". " + StringValue.STUDENT_NAME + student.getName() + ", " + StringValue.STUDENT_ID + student.getID() + ", " + StringValue.COURSES_ENROLLED + student.getEnrolledCourses().size());
         }
-        System.out.println("_____________________________________________________");
+        UtilityHelper.printDashLine();
     }
 
     public static void addCourse(Course course) {
@@ -205,9 +205,7 @@ public class CourseManagement {
             Course course = courses.get(i);
             System.out.println((i + 1) + ". " + StringValue.COURSE_CODE + course.getCourseCode() + ", " + StringValue.COURSE_NAME + course.getCourseName() + ", " + StringValue.MAXIMUM_CAPACITY + course.getMaximumCapacity() + ", " + StringValue.TOTAL_ENROLLED + Course.getTotalEnrolled());
         }
-        System.out.println("_____________________________________________________");
-
-
+        UtilityHelper.printDashLine();
     }
 
     private static boolean findCourseByCode(String courseCode) {
